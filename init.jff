@@ -8,23 +8,54 @@
 			<y>68.0</y>
 			<initial/>
 		</block>
-		<block id="1" name="q1">
-			<tag>Machine1</tag>
-			<x>518.0</x>
-			<y>70.0</y>
-			<final/>
+		<block id="1" name="iniciofitamtu">
+			<tag>iniciofitamtu.jff</tag>
+			<x>669.0</x>
+			<y>91.0</y>
 		</block>
 		<block id="2" name="iniciofita">
 			<tag>iniciofita.jff</tag>
-			<x>300.0</x>
+			<x>405.0</x>
+			<y>83.0</y>
+		</block>
+		<block id="3" name="q3">
+			<tag>Machine3</tag>
+			<x>252.0</x>
+			<y>89.0</y>
+		</block>
+		<block id="4" name="q4">
+			<tag>Machine4</tag>
+			<x>845.0</x>
 			<y>70.0</y>
+			<final/>
 		</block>
 		<!--The list of transitions.-->
 		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>1</read>
+			<write>1</write>
+			<move>R</move>
+		</transition>
+		<transition>
 			<from>0</from>
-			<to>2</to>
+			<to>3</to>
 			<read>q</read>
 			<write>Q</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>4</to>
+			<read>~</read>
+			<write>~</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>2</to>
+			<read>a</read>
+			<write>A</write>
 			<move>R</move>
 		</transition>
 		<transition>
@@ -32,16 +63,49 @@
 			<to>1</to>
 			<read>a</read>
 			<write>A</write>
-			<move>S</move>
+			<move>L</move>
 		</transition>
 		<transition>
 			<from>2</from>
 			<to>1</to>
 			<read/>
 			<write>B</write>
-			<move>S</move>
+			<move>L</move>
 		</transition>
 		<!--The list of automata-->
+		<iniciofitamtu.jff>
+			<!--The list of states.-->
+			<block id="0" name="q0">
+				<tag>Machine0</tag>
+				<x>132.0</x>
+				<y>88.0</y>
+				<initial/>
+			</block>
+			<block id="1" name="q1">
+				<tag>Machine1</tag>
+				<x>361.0</x>
+				<y>88.0</y>
+				<final/>
+			</block>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read/>
+				<write/>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>0</from>
+				<to>0</to>
+				<read>!□</read>
+				<write>~</write>
+				<move>L</move>
+			</transition>
+			<!--The list of automata-->
+			<Machine0/>
+			<Machine1/>
+		</iniciofitamtu.jff>
 		<iniciofita.jff>
 			<!--The list of states.-->
 			<block id="0" name="q0">
@@ -76,6 +140,7 @@
 			<Machine1/>
 		</iniciofita.jff>
 		<Machine0/>
-		<Machine1/>
+		<Machine4/>
+		<Machine3/>
 	</automaton>
 </structure>
