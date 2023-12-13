@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>turingbb</type>
+	<automaton>
+		<!--The list of states.-->
+		<block id="0" name="q0">
+			<tag>Machine0</tag>
+			<x>117.0</x>
+			<y>68.0</y>
+			<initial/>
+		</block>
+		<block id="1" name="q1">
+			<tag>Machine1</tag>
+			<x>518.0</x>
+			<y>70.0</y>
+			<final/>
+		</block>
+		<block id="2" name="iniciofita">
+			<tag>iniciofita.jff</tag>
+			<x>300.0</x>
+			<y>70.0</y>
+		</block>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>q</read>
+			<write>Q</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>1</to>
+			<read>a</read>
+			<write>A</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>1</to>
+			<read/>
+			<write>B</write>
+			<move>S</move>
+		</transition>
+		<!--The list of automata-->
+		<iniciofita.jff>
+			<!--The list of states.-->
+			<block id="0" name="q0">
+				<tag>Machine0</tag>
+				<x>163.0</x>
+				<y>206.0</y>
+				<initial/>
+			</block>
+			<block id="1" name="q1">
+				<tag>Machine1</tag>
+				<x>387.0</x>
+				<y>205.0</y>
+				<final/>
+			</block>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>$</read>
+				<write>$</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>0</from>
+				<to>0</to>
+				<read>!$</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<!--The list of automata-->
+			<Machine0/>
+			<Machine1/>
+		</iniciofita.jff>
+		<Machine0/>
+		<Machine1/>
+	</automaton>
+</structure>
