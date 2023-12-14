@@ -1,554 +1,554 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>&#13;
-	<type>turingbb</type>&#13;
-	<automaton>&#13;
-		<!--The list of states.-->&#13;
-		<block id="0" name="q0">&#13;
-			<tag>Machine0</tag>&#13;
-			<x>64.0</x>&#13;
-			<y>139.0</y>&#13;
-			<initial/>&#13;
-		</block>&#13;
-		<block id="1" name="init">&#13;
-			<tag>init.jff</tag>&#13;
-			<x>202.0</x>&#13;
-			<y>146.0</y>&#13;
-		</block>&#13;
-		<block id="2" name="comparaAfita">&#13;
-			<tag>comparaAfita.jff</tag>&#13;
-			<x>332.0</x>&#13;
-			<y>149.0</y>&#13;
-		</block>&#13;
-		<block id="3" name="realizatransicao">&#13;
-			<tag>realizatransicao.jff</tag>&#13;
-			<x>492.0</x>&#13;
-			<y>153.0</y>&#13;
-		</block>&#13;
-		<block id="4" name="q4">&#13;
-			<tag>Machine4</tag>&#13;
-			<x>410.0</x>&#13;
-			<y>281.0</y>&#13;
-		</block>&#13;
-		<block id="5" name="aceita">&#13;
-			<tag>aceita.jff</tag>&#13;
-			<x>698.0</x>&#13;
-			<y>283.0</y>&#13;
-			<final/>&#13;
-		</block>&#13;
-		<!--The list of transitions.-->&#13;
-		<transition>&#13;
-			<from>4</from>&#13;
-			<to>5</to>&#13;
-			<read>f</read>&#13;
-			<write>f</write>&#13;
-			<move>R</move>&#13;
-		</transition>&#13;
-		<transition>&#13;
-			<from>4</from>&#13;
-			<to>2</to>&#13;
-			<read>!f</read>&#13;
-			<write>~</write>&#13;
-			<move>S</move>&#13;
-		</transition>&#13;
-		<transition>&#13;
-			<from>3</from>&#13;
-			<to>4</to>&#13;
-			<read>~</read>&#13;
-			<write>~</write>&#13;
-			<move>S</move>&#13;
-		</transition>&#13;
-		<transition>&#13;
-			<from>0</from>&#13;
-			<to>1</to>&#13;
-			<read>~</read>&#13;
-			<write>~</write>&#13;
-			<move>S</move>&#13;
-		</transition>&#13;
-		<transition>&#13;
-			<from>2</from>&#13;
-			<to>3</to>&#13;
-			<read>~</read>&#13;
-			<write>~</write>&#13;
-			<move>S</move>&#13;
-		</transition>&#13;
-		<transition>&#13;
-			<from>1</from>&#13;
-			<to>2</to>&#13;
-			<read>~</read>&#13;
-			<write>~</write>&#13;
-			<move>S</move>&#13;
-		</transition>&#13;
-		<!--The list of automata-->&#13;
-		<aceita.jff>&#13;
-			<!--The list of states.-->&#13;
-			<block id="0" name="q0">&#13;
-				<tag>Machine0</tag>&#13;
-				<x>56.0</x>&#13;
-				<y>124.0</y>&#13;
-				<initial/>&#13;
-			</block>&#13;
-			<block id="1" name="q1">&#13;
-				<tag>Machine1</tag>&#13;
-				<x>220.0</x>&#13;
-				<y>131.0</y>&#13;
-			</block>&#13;
-			<block id="2" name="q2">&#13;
-				<tag>Machine2</tag>&#13;
-				<x>360.0</x>&#13;
-				<y>142.0</y>&#13;
-				<final/>&#13;
-			</block>&#13;
-			<!--The list of transitions.-->&#13;
-			<transition>&#13;
-				<from>0</from>&#13;
-				<to>0</to>&#13;
-				<read>!□</read>&#13;
-				<write>~</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>0</from>&#13;
-				<to>1</to>&#13;
-				<read/>&#13;
-				<write>#</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>1</from>&#13;
-				<to>2</to>&#13;
-				<read/>&#13;
-				<write>A</write>&#13;
-				<move>S</move>&#13;
-			</transition>&#13;
-			<!--The list of automata-->&#13;
-			<Machine0/>&#13;
-			<Machine2/>&#13;
-			<Machine1/>&#13;
-		</aceita.jff>&#13;
-		<init.jff>&#13;
-			<!--The list of states.-->&#13;
-			<block id="0" name="q0">&#13;
-				<tag>Machine0</tag>&#13;
-				<x>117.0</x>&#13;
-				<y>68.0</y>&#13;
-				<initial/>&#13;
-			</block>&#13;
-			<block id="1" name="iniciofitamtu">&#13;
-				<tag>iniciofitamtu.jff</tag>&#13;
-				<x>669.0</x>&#13;
-				<y>91.0</y>&#13;
-			</block>&#13;
-			<block id="2" name="iniciofita">&#13;
-				<tag>iniciofita.jff</tag>&#13;
-				<x>405.0</x>&#13;
-				<y>83.0</y>&#13;
-			</block>&#13;
-			<block id="3" name="q3">&#13;
-				<tag>Machine3</tag>&#13;
-				<x>252.0</x>&#13;
-				<y>89.0</y>&#13;
-			</block>&#13;
-			<block id="4" name="q4">&#13;
-				<tag>Machine4</tag>&#13;
-				<x>845.0</x>&#13;
-				<y>70.0</y>&#13;
-				<final/>&#13;
-			</block>&#13;
-			<!--The list of transitions.-->&#13;
-			<transition>&#13;
-				<from>1</from>&#13;
-				<to>4</to>&#13;
-				<read>~</read>&#13;
-				<write>~</write>&#13;
-				<move>S</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>3</from>&#13;
-				<to>3</to>&#13;
-				<read>1</read>&#13;
-				<write>1</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>2</from>&#13;
-				<to>1</to>&#13;
-				<read>a</read>&#13;
-				<write>A</write>&#13;
-				<move>L</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>2</from>&#13;
-				<to>1</to>&#13;
-				<read/>&#13;
-				<write>B</write>&#13;
-				<move>L</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>3</from>&#13;
-				<to>2</to>&#13;
-				<read>a</read>&#13;
-				<write>A</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>0</from>&#13;
-				<to>3</to>&#13;
-				<read>q</read>&#13;
-				<write>Q</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<!--The list of automata-->&#13;
-			<iniciofitamtu.jff>&#13;
-				<!--The list of states.-->&#13;
-				<block id="0" name="q0">&#13;
-					<tag>Machine0</tag>&#13;
-					<x>132.0</x>&#13;
-					<y>88.0</y>&#13;
-					<initial/>&#13;
-				</block>&#13;
-				<block id="1" name="q1">&#13;
-					<tag>Machine1</tag>&#13;
-					<x>361.0</x>&#13;
-					<y>88.0</y>&#13;
-					<final/>&#13;
-				</block>&#13;
-				<!--The list of transitions.-->&#13;
-				<transition>&#13;
-					<from>0</from>&#13;
-					<to>1</to>&#13;
-					<read/>&#13;
-					<write/>&#13;
-					<move>R</move>&#13;
-				</transition>&#13;
-				<transition>&#13;
-					<from>0</from>&#13;
-					<to>0</to>&#13;
-					<read>!□</read>&#13;
-					<write>~</write>&#13;
-					<move>L</move>&#13;
-				</transition>&#13;
-				<!--The list of automata-->&#13;
-				<Machine0/>&#13;
-				<Machine1/>&#13;
-			</iniciofitamtu.jff>&#13;
-			<iniciofita.jff>&#13;
-				<!--The list of states.-->&#13;
-				<block id="0" name="q0">&#13;
-					<tag>Machine0</tag>&#13;
-					<x>163.0</x>&#13;
-					<y>206.0</y>&#13;
-					<initial/>&#13;
-				</block>&#13;
-				<block id="1" name="q1">&#13;
-					<tag>Machine1</tag>&#13;
-					<x>387.0</x>&#13;
-					<y>205.0</y>&#13;
-					<final/>&#13;
-				</block>&#13;
-				<!--The list of transitions.-->&#13;
-				<transition>&#13;
-					<from>0</from>&#13;
-					<to>1</to>&#13;
-					<read>$</read>&#13;
-					<write>$</write>&#13;
-					<move>R</move>&#13;
-				</transition>&#13;
-				<transition>&#13;
-					<from>0</from>&#13;
-					<to>0</to>&#13;
-					<read>!$</read>&#13;
-					<write>~</write>&#13;
-					<move>R</move>&#13;
-				</transition>&#13;
-				<!--The list of automata-->&#13;
-				<Machine0/>&#13;
-				<Machine1/>&#13;
-			</iniciofita.jff>&#13;
-			<Machine0/>&#13;
-			<Machine4/>&#13;
-			<Machine3/>&#13;
-		</init.jff>&#13;
-		<comparaAfita.jff>&#13;
-			<!--The list of states.-->&#13;
-			<block id="0" name="q0">&#13;
-				<tag>Machine0</tag>&#13;
-				<x>622.0</x>&#13;
-				<y>641.0</y>&#13;
-				<initial/>&#13;
-			</block>&#13;
-			<block id="1" name="q1">&#13;
-				<tag>Machine1</tag>&#13;
-				<x>784.0</x>&#13;
-				<y>636.0</y>&#13;
-			</block>&#13;
-			<block id="2" name="q2">&#13;
-				<tag>Machine2</tag>&#13;
-				<x>975.0</x>&#13;
-				<y>624.0</y>&#13;
-			</block>&#13;
-			<block id="3" name="q3">&#13;
-				<tag>Machine3</tag>&#13;
-				<x>1140.0</x>&#13;
-				<y>612.0</y>&#13;
-			</block>&#13;
-			<block id="4" name="q4">&#13;
-				<tag>Machine4</tag>&#13;
-				<x>1296.0</x>&#13;
-				<y>601.0</y>&#13;
-			</block>&#13;
-			<block id="5" name="iniciofitamtu">&#13;
-				<tag>iniciofitamtu.jff</tag>&#13;
-				<x>1165.0</x>&#13;
-				<y>741.0</y>&#13;
-			</block>&#13;
-			<block id="6" name="q6">&#13;
-				<tag>Machine6</tag>&#13;
-				<x>897.0</x>&#13;
-				<y>441.0</y>&#13;
-			</block>&#13;
-			<block id="7" name="q7">&#13;
-				<tag>Machine7</tag>&#13;
-				<x>1031.0</x>&#13;
-				<y>425.0</y>&#13;
-			</block>&#13;
-			<block id="8" name="iniciofitamtu">&#13;
-				<tag>iniciofitamtu.jff</tag>&#13;
-				<x>1251.0</x>&#13;
-				<y>201.0</y>&#13;
-			</block>&#13;
-			<block id="9" name="q9">&#13;
-				<tag>Machine9</tag>&#13;
-				<x>1467.0</x>&#13;
-				<y>162.0</y>&#13;
-				<final/>&#13;
-			</block>&#13;
-			<!--The list of transitions.-->&#13;
-			<transition>&#13;
-				<from>1</from>&#13;
-				<to>2</to>&#13;
-				<read>1</read>&#13;
-				<write>2</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>3</from>&#13;
-				<to>4</to>&#13;
-				<read>1</read>&#13;
-				<write>2</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>8</from>&#13;
-				<to>9</to>&#13;
-				<read>~</read>&#13;
-				<write>~</write>&#13;
-				<move>S</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>5</from>&#13;
-				<to>0</to>&#13;
-				<read>~</read>&#13;
-				<write>~</write>&#13;
-				<move>S</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>0</from>&#13;
-				<to>1</to>&#13;
-				<read>A</read>&#13;
-				<write>A</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>6</from>&#13;
-				<to>7</to>&#13;
-				<read>A</read>&#13;
-				<write>A</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>2</from>&#13;
-				<to>3</to>&#13;
-				<read>A</read>&#13;
-				<write>A</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>1</from>&#13;
-				<to>1</to>&#13;
-				<read>2</read>&#13;
-				<write>2</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>3</from>&#13;
-				<to>3</to>&#13;
-				<read>2</read>&#13;
-				<write>2</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>7</from>&#13;
-				<to>7</to>&#13;
-				<read>2</read>&#13;
-				<write>2</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>0</from>&#13;
-				<to>0</to>&#13;
-				<read>!A</read>&#13;
-				<write>~</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>2</from>&#13;
-				<to>2</to>&#13;
-				<read>!A</read>&#13;
-				<write>~</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>6</from>&#13;
-				<to>6</to>&#13;
-				<read>!A</read>&#13;
-				<write>~</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>4</from>&#13;
-				<to>5</to>&#13;
-				<read>~</read>&#13;
-				<write>~</write>&#13;
-				<move>L</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>7</from>&#13;
-				<to>8</to>&#13;
-				<read>a</read>&#13;
-				<write>a</write>&#13;
-				<move>L</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>1</from>&#13;
-				<to>6</to>&#13;
-				<read>a</read>&#13;
-				<write>a</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<!--The list of automata-->&#13;
-			<iniciofitamtu.jff>&#13;
-				<!--The list of states.-->&#13;
-				<block id="0" name="q0">&#13;
-					<tag>Machine0</tag>&#13;
-					<x>132.0</x>&#13;
-					<y>88.0</y>&#13;
-					<initial/>&#13;
-				</block>&#13;
-				<block id="1" name="q1">&#13;
-					<tag>Machine1</tag>&#13;
-					<x>361.0</x>&#13;
-					<y>88.0</y>&#13;
-					<final/>&#13;
-				</block>&#13;
-				<!--The list of transitions.-->&#13;
-				<transition>&#13;
-					<from>0</from>&#13;
-					<to>1</to>&#13;
-					<read/>&#13;
-					<write/>&#13;
-					<move>R</move>&#13;
-				</transition>&#13;
-				<transition>&#13;
-					<from>0</from>&#13;
-					<to>0</to>&#13;
-					<read>!□</read>&#13;
-					<write>~</write>&#13;
-					<move>L</move>&#13;
-				</transition>&#13;
-				<!--The list of automata-->&#13;
-				<Machine0/>&#13;
-				<Machine1/>&#13;
-			</iniciofitamtu.jff>&#13;
-			<Machine7/>&#13;
-			<Machine9/>&#13;
-			<Machine0/>&#13;
-			<Machine2/>&#13;
-			<Machine1/>&#13;
-			<Machine4/>&#13;
-			<Machine3/>&#13;
-			<Machine6/>&#13;
-		</comparaAfita.jff>&#13;
-		<Machine0/>&#13;
-		<Machine4/>&#13;
-		<realizatransicao.jff>&#13;
-			<!--The list of states.-->&#13;
-			<block id="0" name="q0">&#13;
-				<tag>Machine0</tag>&#13;
-				<x>182.0</x>&#13;
-				<y>206.0</y>&#13;
-			</block>&#13;
-			<block id="1" name="q1">&#13;
-				<tag>Machine1</tag>&#13;
-				<x>354.0</x>&#13;
-				<y>209.0</y>&#13;
-			</block>&#13;
-			<block id="2" name="q2">&#13;
-				<tag>Machine2</tag>&#13;
-				<x>552.0</x>&#13;
-				<y>221.0</y>&#13;
-			</block>&#13;
-			<block id="3" name="q3">&#13;
-				<tag>Machine3</tag>&#13;
-				<x>499.0</x>&#13;
-				<y>281.0</y>&#13;
-			</block>&#13;
-			<!--The list of transitions.-->&#13;
-			<transition>&#13;
-				<from>1</from>&#13;
-				<to>1</to>&#13;
-				<read>2</read>&#13;
-				<write>1</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>0</from>&#13;
-				<to>0</to>&#13;
-				<read>!Q</read>&#13;
-				<write>~</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>2</from>&#13;
-				<to>2</to>&#13;
-				<read>!q</read>&#13;
-				<write>~</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>1</from>&#13;
-				<to>2</to>&#13;
-				<read>!2</read>&#13;
-				<write>~</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>0</from>&#13;
-				<to>1</to>&#13;
-				<read>Q</read>&#13;
-				<write>q</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<transition>&#13;
-				<from>2</from>&#13;
-				<to>3</to>&#13;
-				<read>q</read>&#13;
-				<write>Q</write>&#13;
-				<move>R</move>&#13;
-			</transition>&#13;
-			<!--The list of automata-->&#13;
-			<Machine0/>&#13;
-			<Machine2/>&#13;
-			<Machine1/>&#13;
-			<Machine3/>&#13;
-		</realizatransicao.jff>&#13;
-	</automaton>&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>turingbb</type>
+	<automaton>
+		<!--The list of states.-->
+		<block id="0" name="q0">
+			<tag>Machine0</tag>
+			<x>64.0</x>
+			<y>139.0</y>
+			<initial/>
+		</block>
+		<block id="1" name="init">
+			<tag>init.jff</tag>
+			<x>202.0</x>
+			<y>146.0</y>
+		</block>
+		<block id="2" name="comparaAfita">
+			<tag>comparaAfita.jff</tag>
+			<x>332.0</x>
+			<y>149.0</y>
+		</block>
+		<block id="3" name="realizatransicao">
+			<tag>realizatransicao.jff</tag>
+			<x>492.0</x>
+			<y>153.0</y>
+		</block>
+		<block id="4" name="q4">
+			<tag>Machine4</tag>
+			<x>410.0</x>
+			<y>281.0</y>
+		</block>
+		<block id="5" name="aceita">
+			<tag>aceita.jff</tag>
+			<x>698.0</x>
+			<y>283.0</y>
+			<final/>
+		</block>
+		<!--The list of transitions.-->
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>~</read>
+			<write>~</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>2</to>
+			<read>!f</read>
+			<write>~</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>~</read>
+			<write>~</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read>f</read>
+			<write>f</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>~</read>
+			<write>~</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read>~</read>
+			<write>~</write>
+			<move>S</move>
+		</transition>
+		<!--The list of automata-->
+		<aceita.jff>
+			<!--The list of states.-->
+			<block id="0" name="q0">
+				<tag>Machine0</tag>
+				<x>56.0</x>
+				<y>124.0</y>
+				<initial/>
+			</block>
+			<block id="1" name="q1">
+				<tag>Machine1</tag>
+				<x>220.0</x>
+				<y>131.0</y>
+			</block>
+			<block id="2" name="q2">
+				<tag>Machine2</tag>
+				<x>360.0</x>
+				<y>142.0</y>
+				<final/>
+			</block>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>0</to>
+				<read>!□</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>2</to>
+				<read/>
+				<write>A</write>
+				<move>S</move>
+			</transition>
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read/>
+				<write>#</write>
+				<move>R</move>
+			</transition>
+			<!--The list of automata-->
+			<Machine0/>
+			<Machine2/>
+			<Machine1/>
+		</aceita.jff>
+		<comparaAfita.jff>
+			<!--The list of states.-->
+			<block id="0" name="q0">
+				<tag>Machine0</tag>
+				<x>622.0</x>
+				<y>641.0</y>
+				<initial/>
+			</block>
+			<block id="1" name="q1">
+				<tag>Machine1</tag>
+				<x>784.0</x>
+				<y>636.0</y>
+			</block>
+			<block id="2" name="q2">
+				<tag>Machine2</tag>
+				<x>975.0</x>
+				<y>624.0</y>
+			</block>
+			<block id="3" name="q3">
+				<tag>Machine3</tag>
+				<x>1140.0</x>
+				<y>612.0</y>
+			</block>
+			<block id="4" name="q4">
+				<tag>Machine4</tag>
+				<x>1296.0</x>
+				<y>601.0</y>
+			</block>
+			<block id="5" name="iniciofitamtu">
+				<tag>iniciofitamtu.jff</tag>
+				<x>1165.0</x>
+				<y>741.0</y>
+			</block>
+			<block id="6" name="q6">
+				<tag>Machine6</tag>
+				<x>897.0</x>
+				<y>441.0</y>
+			</block>
+			<block id="7" name="q7">
+				<tag>Machine7</tag>
+				<x>1031.0</x>
+				<y>425.0</y>
+			</block>
+			<block id="8" name="iniciofitamtu">
+				<tag>iniciofitamtu.jff</tag>
+				<x>1251.0</x>
+				<y>201.0</y>
+			</block>
+			<block id="9" name="q9">
+				<tag>Machine9</tag>
+				<x>1467.0</x>
+				<y>162.0</y>
+				<final/>
+			</block>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>A</read>
+				<write>A</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>7</from>
+				<to>8</to>
+				<read>a</read>
+				<write>a</write>
+				<move>L</move>
+			</transition>
+			<transition>
+				<from>6</from>
+				<to>7</to>
+				<read>A</read>
+				<write>A</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>8</from>
+				<to>9</to>
+				<read>~</read>
+				<write>~</write>
+				<move>S</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>1</to>
+				<read>2</read>
+				<write>2</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>3</from>
+				<to>3</to>
+				<read>2</read>
+				<write>2</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>7</from>
+				<to>7</to>
+				<read>2</read>
+				<write>2</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>4</from>
+				<to>5</to>
+				<read>~</read>
+				<write>~</write>
+				<move>L</move>
+			</transition>
+			<transition>
+				<from>0</from>
+				<to>0</to>
+				<read>!A</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>2</from>
+				<to>2</to>
+				<read>!A</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>6</from>
+				<to>6</to>
+				<read>!A</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>3</from>
+				<to>4</to>
+				<read>1</read>
+				<write>2</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>6</to>
+				<read>a</read>
+				<write>a</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>2</to>
+				<read>1</read>
+				<write>2</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>2</from>
+				<to>3</to>
+				<read>A</read>
+				<write>A</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>5</from>
+				<to>0</to>
+				<read>~</read>
+				<write>~</write>
+				<move>S</move>
+			</transition>
+			<!--The list of automata-->
+			<iniciofitamtu.jff>
+				<!--The list of states.-->
+				<block id="0" name="q0">
+					<tag>Machine0</tag>
+					<x>132.0</x>
+					<y>88.0</y>
+					<initial/>
+				</block>
+				<block id="1" name="q1">
+					<tag>Machine1</tag>
+					<x>361.0</x>
+					<y>88.0</y>
+					<final/>
+				</block>
+				<!--The list of transitions.-->
+				<transition>
+					<from>0</from>
+					<to>1</to>
+					<read/>
+					<write/>
+					<move>R</move>
+				</transition>
+				<transition>
+					<from>0</from>
+					<to>0</to>
+					<read>!□</read>
+					<write>~</write>
+					<move>L</move>
+				</transition>
+				<!--The list of automata-->
+				<Machine0/>
+				<Machine1/>
+			</iniciofitamtu.jff>
+			<Machine7/>
+			<Machine9/>
+			<Machine0/>
+			<Machine2/>
+			<Machine1/>
+			<Machine4/>
+			<Machine3/>
+			<Machine6/>
+		</comparaAfita.jff>
+		<init.jff>
+			<!--The list of states.-->
+			<block id="0" name="q0">
+				<tag>Machine0</tag>
+				<x>117.0</x>
+				<y>68.0</y>
+				<initial/>
+			</block>
+			<block id="1" name="iniciofitamtu">
+				<tag>iniciofitamtu.jff</tag>
+				<x>669.0</x>
+				<y>91.0</y>
+			</block>
+			<block id="2" name="iniciofita">
+				<tag>iniciofita.jff</tag>
+				<x>405.0</x>
+				<y>83.0</y>
+			</block>
+			<block id="3" name="q3">
+				<tag>Machine3</tag>
+				<x>252.0</x>
+				<y>89.0</y>
+			</block>
+			<block id="4" name="q4">
+				<tag>Machine4</tag>
+				<x>845.0</x>
+				<y>70.0</y>
+				<final/>
+			</block>
+			<!--The list of transitions.-->
+			<transition>
+				<from>1</from>
+				<to>4</to>
+				<read>~</read>
+				<write>~</write>
+				<move>S</move>
+			</transition>
+			<transition>
+				<from>3</from>
+				<to>3</to>
+				<read>1</read>
+				<write>1</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>0</from>
+				<to>3</to>
+				<read>q</read>
+				<write>Q</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>2</from>
+				<to>1</to>
+				<read>a</read>
+				<write>A</write>
+				<move>L</move>
+			</transition>
+			<transition>
+				<from>3</from>
+				<to>2</to>
+				<read>a</read>
+				<write>A</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>2</from>
+				<to>1</to>
+				<read/>
+				<write>B</write>
+				<move>L</move>
+			</transition>
+			<!--The list of automata-->
+			<iniciofitamtu.jff>
+				<!--The list of states.-->
+				<block id="0" name="q0">
+					<tag>Machine0</tag>
+					<x>132.0</x>
+					<y>88.0</y>
+					<initial/>
+				</block>
+				<block id="1" name="q1">
+					<tag>Machine1</tag>
+					<x>361.0</x>
+					<y>88.0</y>
+					<final/>
+				</block>
+				<!--The list of transitions.-->
+				<transition>
+					<from>0</from>
+					<to>1</to>
+					<read/>
+					<write/>
+					<move>R</move>
+				</transition>
+				<transition>
+					<from>0</from>
+					<to>0</to>
+					<read>!□</read>
+					<write>~</write>
+					<move>L</move>
+				</transition>
+				<!--The list of automata-->
+				<Machine0/>
+				<Machine1/>
+			</iniciofitamtu.jff>
+			<iniciofita.jff>
+				<!--The list of states.-->
+				<block id="0" name="q0">
+					<tag>Machine0</tag>
+					<x>163.0</x>
+					<y>206.0</y>
+					<initial/>
+				</block>
+				<block id="1" name="q1">
+					<tag>Machine1</tag>
+					<x>387.0</x>
+					<y>205.0</y>
+					<final/>
+				</block>
+				<!--The list of transitions.-->
+				<transition>
+					<from>0</from>
+					<to>1</to>
+					<read>$</read>
+					<write>$</write>
+					<move>R</move>
+				</transition>
+				<transition>
+					<from>0</from>
+					<to>0</to>
+					<read>!$</read>
+					<write>~</write>
+					<move>R</move>
+				</transition>
+				<!--The list of automata-->
+				<Machine0/>
+				<Machine1/>
+			</iniciofita.jff>
+			<Machine0/>
+			<Machine4/>
+			<Machine3/>
+		</init.jff>
+		<Machine0/>
+		<Machine4/>
+		<realizatransicao.jff>
+			<!--The list of states.-->
+			<block id="0" name="q0">
+				<tag>Machine0</tag>
+				<x>182.0</x>
+				<y>206.0</y>
+			</block>
+			<block id="1" name="q1">
+				<tag>Machine1</tag>
+				<x>354.0</x>
+				<y>209.0</y>
+			</block>
+			<block id="2" name="q2">
+				<tag>Machine2</tag>
+				<x>552.0</x>
+				<y>221.0</y>
+			</block>
+			<block id="3" name="q3">
+				<tag>Machine3</tag>
+				<x>499.0</x>
+				<y>281.0</y>
+			</block>
+			<!--The list of transitions.-->
+			<transition>
+				<from>1</from>
+				<to>1</to>
+				<read>2</read>
+				<write>1</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>0</from>
+				<to>0</to>
+				<read>!Q</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>2</from>
+				<to>2</to>
+				<read>!q</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>Q</read>
+				<write>q</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>2</to>
+				<read>!2</read>
+				<write>~</write>
+				<move>R</move>
+			</transition>
+			<transition>
+				<from>2</from>
+				<to>3</to>
+				<read>q</read>
+				<write>Q</write>
+				<move>R</move>
+			</transition>
+			<!--The list of automata-->
+			<Machine0/>
+			<Machine2/>
+			<Machine1/>
+			<Machine3/>
+		</realizatransicao.jff>
+	</automaton>
 </structure>
