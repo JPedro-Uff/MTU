@@ -24,9 +24,14 @@ caso o estado de destino seja final, ele retorna na posição do f, que é usado
 com isso é chamado o Aceita, que apenas escreve #A ao final do string.
 
 Casos Teste utilizados:
-
+Caso válido:
 q1a1a11Rq11#q11a11a111Lf#q11a1a11Rq1$a1a11
 
+Caso onde não há transição para símbolo inicial
 q1a11a11Rq11#q11a11a111Lf#q11a1a11Rq1$a1a11
 
+Caso onde eventualmente não há transição válida para símbolo
 q1a1a11Rq11#q11a111a11Lf#q11a1a11Rq1$a1a11
+
+Caso com transição inválida (estado q1111 inexistente)
+q1a1a11Rq1111#q11a111a111Lf#q11a1a11Rq1$a1a11
