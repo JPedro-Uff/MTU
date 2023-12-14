@@ -1,5 +1,7 @@
+Membros: João Pedro Barreiro e João Victor Maia
 
-Init -> Marca a fita com as configurações iniciais\
+
+Init -> Marca a fita com as configurações iniciais
 ex:
 q1a1a11Rq11#q11a11a111Lf#q11a1a11Rq1$a1a11
 Q1A1a11Rq11#q11a11a111Lf#q11a1a11Rq1$A1a11
@@ -21,4 +23,10 @@ q1a1a11Rq11#Q11A11a111Lf#q11a1a11Rq1$a11A11
 caso o estado de destino seja final, ele retorna na posição do f, que é usado como sinal para a Main que a palavra foi aceita pela MT
 com isso é chamado o Aceita, que apenas escreve #A ao final do string.
 
+Casos Teste utilizados:
 
+q1a1a11Rq11#q11a11a111Lf#q11a1a11Rq1$a1a11
+
+q1a11a11Rq11#q11a11a111Lf#q11a1a11Rq1$a1a11
+
+q1a1a11Rq11#q11a111a11Lf#q11a1a11Rq1$a1a11
